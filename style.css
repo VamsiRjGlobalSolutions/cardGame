@@ -1,0 +1,58 @@
+body {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding-left: 200px;
+}
+
+img {
+    width: 100px;
+    height: 140px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#main-cards img {
+    margin: 5px;
+}
+
+.selected {
+    transform: scale(1.1);
+    border: 2px solid blue;
+}
+
+.faded {
+    opacity: 0.5;
+}
+
+.bot-cards img {
+    border-radius: 5%;
+}
+
+.bot-cards {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#card-image {
+    margin-bottom: 50px;
+}
+
+.card-group img {
+    position: absolute;
+}
+
+#imgd {
+    transition: left 2s ease-in-out;
+    position: relative; /* Ensure it's positioned relative to its container */
+    left: 0; /* Initial position */
+}
+
+.slide-left {
+    left: -300px; /* Move the image 300px to the left */
+}
